@@ -167,7 +167,7 @@
 	top: 0;
 }
 .banner-list-box>ul{
-	widows: 100%;
+	width: 100%;
 	height: 100%;
 	padding: 20px 0;
 	background: rgba(255,255,255,0.1);
@@ -187,7 +187,6 @@
 	margin-left: 30px;
 }
 .banner-list-box>ul>li .right{
-    float:right;
 	line-height: 42px;
 	margin-right: 20px;
 	text-align:center;
@@ -195,6 +194,8 @@
 .banner-list-box>ul>li .iconfont{
 	font-size: 12px;
 	color:#c5c8cb ;
+	float:right;
+
 }
 .banner-point-box{
 	width: 200px;
