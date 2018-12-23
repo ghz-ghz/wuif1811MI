@@ -21,6 +21,9 @@
 	color:#b0b0b0;
 	font-size:14px;
 }
+.head-left .text:hover{
+	color: #fff;
+}
 .head-left .line{
 	float:left;
 	height:14px;
@@ -41,6 +44,10 @@
 	line-height:40px;
 	color:#b0b0b0;
 }
+.head-car:hover{
+	color: #ff6700;
+	background: #fff;
+}
 .head-right .text-box{
 	height:100%;
 	float:right;
@@ -52,6 +59,9 @@
 	text-align:center;
 	line-height:40px;
 	color:#b0b0b0;
+}
+.head-right .text:hover{
+	color: #fff;
 }
 .head-right .line{
 	float:left;
@@ -92,6 +102,10 @@
 	color:#333333;
 	font-size:16px;
 }
+.daohang .daohang1:hover{
+	color: red;
+	cursor: pointer;
+}
 .daohang .sousuo{
 	height:48px;
 	border:1px solid #e0e0e0;
@@ -121,6 +135,11 @@
 	background: #eeeeee;
 	padding: 1px 2px;
 }
+.sousuo-tishi span:hover{
+	color: #fff;
+	background: #ff6700;
+	cursor: pointer;
+}
 .sousuo-tishi .tishi1{
 	margin: 0 5px;
 }
@@ -133,6 +152,11 @@
 	line-height: 48px;
 	outline: none;
 	box-sizing: border-box;
+}
+.sousuo .sousuo-right:hover{
+	color: #fff;
+	background: #ff6700;
+	cursor: pointer;
 }
 
 /* 导航结束 */
@@ -176,8 +200,16 @@
 .banner-list-box>ul>li{
 	width: 100%;
 	height: 42px;
-	/* background: #ff6700; */
 	cursor: pointer;
+}
+.banner-list-box>ul>li:hover .goods-list{
+	display: block;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	box-shadow:2px 10px 20px 3px rgba(0,0,0,0.15);
+}
+.banner-list-box>ul>li:hover{
+	background: #ff6700;
 }
 .banner-list-box>ul>li .left{
 	font-size: 14px;
@@ -195,7 +227,42 @@
 	font-size: 12px;
 	color:#c5c8cb ;
 	float:right;
-
+}
+.banner-list-box>ul>li .goods-list{
+	width: 992px;
+	height: 460px;
+	position: absolute;
+	left: 234px;
+	top: 0;
+	background: #fff;
+	display: none;
+}
+.banner-list-box>ul>li .goods-list1{
+	width: 247.5px;
+	height: 100%;
+	float: left;
+}
+.banner-list-box>ul>li .goods-list1>li{
+	width: 248px;
+	height: 76.333333333333px;
+	padding: 19px;
+	box-sizing: border-box;
+}
+.banner-list-box>ul>li .goods-list1 li img{
+	width:38px;
+	height: 38px;
+	float: left;
+}
+.banner-list-box>ul>li .goods-list1 li span{
+	font-size: 14px;
+	color: #333;
+	display: block;
+	float: left;
+	line-height: 38px;
+	margin-left: 10px;
+} 
+.banner-list-box>ul>li .goods-list1 li span:hover{
+	color: #ff6700 ;
 }
 .banner-point-box{
 	width: 200px;
@@ -219,6 +286,10 @@
 	border-radius: 50%;
 	cursor: pointer;
 }
+.banner-point-box>div>div:hover{
+	background: rgba(255,255,255,0.5);
+	border: 2px solid rgba(0,0,0,0.3);
+}
 .banner-point-box .active{
 	background: rgba(255,255,255,0.5);
 	border: 2px solid rgba(0,0,0,0.3);
@@ -237,6 +308,7 @@
 	overflow: hidden;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
+/* 	display: none; */
 }
 .banner-move-btn2{
 	right: 0;
@@ -246,13 +318,91 @@
 	overflow: hidden;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
+	/* display: none; */
 }
 /* banner结束 */
+/* 广告开始 */
+.ad{
+	width: 1226px;
+	height: 170px;
+	margin:20px auto;
+}
+.ad>ul>li{
+	width: 316.66666666px;
+	height: 170px;
+	float: left;
+	margin-left: 14px;
+}
+.ad .item1{
+	width: 234px;
+	height: 170px;
+	float: left;
+	margin-left: 0;
+	font-size: 30px;
+}
+.ad .item1>div{
+	width: calc(234px / 3);
+	height: calc(170px / 2);
+	background:#5f5750;
+	float: left;
+	position: relative;
+	text-align: center;
+	padding-top: 8px;
+	box-sizing: border-box;
+}
+/* .ad .item1>div:hover .ad .item1>div .iconfont{
+	color: #fff;
+	z-index: 999;
+} */
+.ad .item1>div .iconfont{
+	color: #ceccca;
+	font-size: 26px;
+}
+.ad .item1>div>p{
+	color: #ceccca;
+	font-size: 12px;
+	margin-top:3px;
+}
+.ad .item1 .line1,.ad .item1 .line2,.ad .item1 .line6,.ad .item1 .line7{
+	width: 1px;
+	height: 70px;
+	background: #645c56;
+	position: absolute;
+	top: 7.5px;
+}
+.ad .item1 .line1{
+
+	left: 0;
+}
+.ad .item1 .line2{
+
+	right: 0;
+}
+.ad .item1 .line6{
+    left: 0;
+}
+.ad .item1 .line7{
+	right: 0;
+}
+.ad .item1 .line3,.ad .item1 .line4,.ad .item1 .line5{
+	width: 64px;
+	height: 1px;
+	background: #645c56;
+	position: absolute;
+	left: 7px;
+	bottom: 0;
+}
+.ad ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 广告结束 */
 /* 小米闪购开始 */
 .shangou{
 	width: 1226px;
 	height:400px;
-	margin:20px auto 0 auto;
+	margin:0 auto;
 }
 .shangou .shangou-top{
 	width: 100%;
@@ -409,6 +559,233 @@
 	color: #a9a9a9;
 }
 /* 小米闪购结束 */
+/* 楼层广告长条开始 */
+.lc-image-box{
+	width: 1226px;
+	height: 120px;
+	margin:22px auto 28px auto;
+}
+.lc-image-box img{
+	width: 100%;
+	height: 100%;
+}
+/* 楼层广告长条结束 */
+/* 手机楼层开始 */
+.phone{
+	width: 1226px;
+	height:672px;
+	margin: 0 auto;
+	padding-top: 18px;
+}
+.phone-top{
+	width:100%;
+	height: 58px;
+}
+.phone-top h3{
+	font-size: 22px;
+	color: #525252;
+	line-height: 58px;
+	font-weight: 200px;
+	float: left;
+}
+.phone-top-right{
+	width: 200px;
+	height: 58px;
+	float: right;
+}
+.phone span{
+	font-size: 16px;
+	line-height: 58px;
+	float:right;
+}
+.phone span:hover{
+	color: #FF6700;
+	cursor: pointer;
+}
+.phone-top-right .more{
+	width: 20px;
+	height: 20px;
+	background: #b0b0b0;
+	float:right;
+	margin: 19px 0 19px 8px;
+	border-radius: 50%;
+	line-height:15px;
+}
+.phone-top-right .more .iconfont{
+	color: #fafafa;
+	font-size: 5px;
+	margin-left: 5px;
+}
+.phone-top-right .more:hover{
+	background: #FF6700;
+	cursor: pointer;
+}
+.phone-bottom{
+	width:100%;
+	height: 614px;
+}
+.phone-bottom-left{
+	width: 234px;
+	height: 100%;
+	float: left;
+}
+.phone-bottom-left img{
+	width: 100%;
+	height: 100%;
+	transition:0.5s;
+}
+.phone-bottom-left img:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px 3px rgba(0,0,0,0.1);
+}
+.phone-bottom-right{
+	width:992px;
+	height: 100%;
+	float: left;
+}
+.phone-bottom-right ul>li{
+	width: 234px;
+	height: 300px;
+	float: left;
+	margin-left: 14px;
+	transition:0.5s;
+	position: relative;
+}
+.phone-bottom-right ul .flag{
+	margin-top: 14px;
+}
+.jian,.new-goods{
+	font-size: 12px;
+	color: #fff;
+	width: 64px;
+	height: 20px;
+	text-align: center;
+	line-height:20px ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.jian{
+	background: #E53935;
+}
+.new-goods{
+	background:#83c44e;
+}
+.phone-bottom-right ul>li img{
+	width: 160px;
+	height: 160px;
+	margin:20px 37px;
+}
+.phone-bottom-right ul>li .name{
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	padding: 1px 0;
+}
+.phone-bottom-right ul>li .miaoshu{
+	font-size: 12px;
+	color: #b0b0b0;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+.phone-bottom-right ul>li .price{
+	font-size: 12px;
+	color: #ff6700;
+	text-align: center;
+	padding:2.5px 0;
+}
+.phone-bottom-right ul>li:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px 3px rgba(0,0,0,0.1);
+}
+/* 手机楼层结束 */
+/* 家电开始 */
+.phone-top-right ul{
+	width: 300px;
+	float: right;
+}
+.phone-top-right ul>li{
+    float:right;
+    margin-left: 30px;
+	margin-right: 0px;
+    font-size: 16px;
+}
+.phone-top-right ul>li:hover{
+	color: #ff6700;
+	border-bottom: 2px solid #FF6700;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.phone-top-right ul>.jiadian-active{
+	color: #ff6700;
+	border-bottom: 2px solid #FF6700;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+}
+.phone-top-right ul>.active{
+
+	color: #ff6700;
+}
+.jiadian-bottom-left img{
+	width: 234px;
+	height: 300px;
+}
+.jiadian-bottom-left img:hover{
+	box-shadow: 0 10px 30px 3px rgba(0,0,0,0.1);
+}
+.phone-bottom-right ul>li{
+	position: relative;
+	overflow: hidden;
+}
+.phone-bottom-right ul>.jiadian-flag .jiadian-flag-move{
+	width: 100%;
+	height: 75px;
+	background: #ff6700;
+	position: absolute;
+	top: 300px;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+.jiadian-flag-move .pingjia{
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+.jiadian-flag-move .from{
+	font-size: 12px;
+	color: #F1EDED;
+}
+/* .phone-bottom-right ul>.jiadian-flag:hover .jiadian-flag-move{
+	transform: translateY(-75px,0);
+} */
+
+.phone-bottom-right ul .flag8-top{
+	width: 234px;
+	height: 143px;
+	transition: all 0.5s;
+}
+.phone-bottom-right ul .flag8-top:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px 3px rgba(0,0,0,0.1);
+}
+.phone-bottom-right ul .flag8:hover{
+	transform: translateY(0);
+}
+.phone-bottom-right ul .flag8-bottom{
+	width: 234px;
+	height: 143px;
+	margin-top: 14px;
+	transition: all 0.5s;
+}
+.phone-bottom-right ul .flag8-bottom:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px 3px rgba(0,0,0,0.1);
+}
+/* 家电结束 */
 /* 为你推荐开始 */
 main{
 	background: #f5f5f5;
