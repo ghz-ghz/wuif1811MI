@@ -1,0 +1,35 @@
+footer{
+	box-shadow: 0 -0.03rem 0.1rem 0.02rem rgba(0,0,0,0.1);
+	height: 1.4rem;
+	width: 100%;
+	display: flex;
+}
+footer .list{
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	margin: 0;
+}
+footer .list .icon{
+	width: 0.58rem;
+	height: 0.58rem;
+	display: flex;
+}
+footer .list .icon .iconfont{
+	font-size: 0.58rem;
+	color: #7C7C7C;
+}
+footer .list .text{
+	font-size: 0.3rem;
+	margin-top: 0.03rem;
+	color: #9F9F9F;
+}
+footer .active .icon .iconfont{
+	color: #ff6700;
+}
+footer .active>.text{
+	color: #ff6700;
+}
