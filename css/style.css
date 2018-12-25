@@ -1102,18 +1102,19 @@ main{
 	height: 154px;
 }
 .neirong-bottom ul .item .lunbo-box{
-	width:96px;/* 
-	height: 30px; */
+	width:196px;
+	height: 30px;
 	margin: 0 50px;
-	background: #333333;
+	background:red;
 	padding:0 10px;
 }
-.neirong-bottom ul .item .lunbo{
+.neirong-bottom ul .item .lunbo-con{
 	width:10px;
 	height:10px;
 	border-radius:50%;
 	background: #b0b0b0;
-	/* margin:10px 10px; */
+	margin:10px 10px;
+	padding: 0;
 	float: left;
 }
 /* 内容结束 */
